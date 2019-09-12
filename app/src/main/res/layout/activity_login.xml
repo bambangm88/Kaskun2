@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBDF"
+    android:padding="12dp"
+    tools:context=".Login.LoginActivity">
+
+<ImageView
+    android:id="@+id/img"
+    android:src="@drawable/kaskun"
+    android:layout_marginTop="60dp"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true" >
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Masukan Nama"
+                android:inputType="textEmailAddress"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:hint="Masukan Password"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_margin="30dp"
+            android:id="@+id/btnLogin"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:text="Copyright by : Rizal"
+        android:textSize="15sp"        />
+
+</RelativeLayout>
